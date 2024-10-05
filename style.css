@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    height: 100vh;
+    background: linear-gradient(135deg, #2c3e50, #2980b9);
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.header-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.header-content p {
+    font-size: 1.5rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Skills List Styles */
+.skills-list, .projects-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* Card Styles */
+.skill-card, .project-card {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    flex: 1;
+    min-width: 250px;
+    transition: transform 0.2s;
+}
+
+.skill-card:hover, .project-card:hover {
+    transform: translateY(-5px);
+}
+
+.skill-card h3, .project-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+/* Contact Button Styles */
+.contact-links {
+    margin-top: 20px;
+}
+
+.contact-links .contact-btn {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    background-color: #2980b9;
+    color: white;
+    font-size: 24px;
+    border-radius: 50%;
+    line-height: 50px;
+    text-align: center;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.contact-links .contact-btn:hover {
+    background-color: #1c5980;
+}
+
+.contact-links i {
+    pointer-events: none; /* Prevents clicking on the icon itself */
+}
+
+/* Back to Top Button */
+#back-to-top {
+    display: none; /* Hidden by default */
+    position: fixed;
+    bottom: 40px;
+    right: 30px;
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* Circular button */
+    font-size: 24px; /* Adjusted font size */
+    line-height: 50px; /* Center the Unicode character */
+    cursor: pointer;
+}
+
+#back-to-top:hover {
+    background-color: #1c5980;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2980b9;
+    color: white;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+header.dark-mode {
+    background: linear-gradient(135deg, #1b262c, #0f4c75);
+}
+
+nav.dark-mode {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.contact-links a.dark-mode {
+    background-color: #0f4c75;
+}
+
+.dark-mode i {
+    color: white; /* Icon color in dark mode */
+}
